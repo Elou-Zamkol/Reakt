@@ -1,0 +1,37 @@
+.book-card {
+    background: radial-gradient(circle at top left, #ffffff, #f0f0f8);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    padding: 32px;
+    border-radius: 24px;
+    max-width: 700px;
+    margin: 32px auto;
+    font-family: "Segoe UI", "Roboto", "Helvetica Neue", sans-serif;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    position: relative;
+}
+
+.book-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+
+.book-card h2 {
+    color: #1a2340;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #5e7cff;
+    display: inline-block;
+    padding-bottom: 6px;
+}
+
+.book-card p {
+    margin: 14px 0;
+    line-height: 1.8;
+    color: #333;
+    font-size: 1.2rem;
+}
+
+.book-card strong {
+    color: #1a1a1a;
+    font-weight: 600;
+}
