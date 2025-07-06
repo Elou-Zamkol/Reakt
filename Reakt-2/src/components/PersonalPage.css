@@ -1,0 +1,31 @@
+.personal-page {
+    background-color: #f8faff;
+    border: 1px solid #cce0ff;
+    border-radius: 12px;
+    padding: 24px;
+    max-width: 500px;
+    margin: 40px auto;
+    font-family: 'Segoe UI', sans-serif;
+    box-shadow: 0 6px 16px rgba(0, 123, 255, 0.1);
+}
+
+.personal-page h2 {
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+    color: #0056b3;
+}
+
+.info-row {
+    display: flex;
+    margin-bottom: 12px;
+}
+
+.label {
+    font-weight: bold;
+    width: 120px;
+    color: #333;
+}
+
+.value {
+    color: #555;
+}
