@@ -1,0 +1,258 @@
+/* registration-panel.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #d0f0fd, #e4f5e7, #fff3e0);
+    font-family: 'Inter', sans-serif;
+    color: #2c3e50;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.registration-panel {
+    background: #ffffffdd;
+    padding: 42px 36px;
+    border-radius: 18px;
+    box-shadow: 0 14px 32px rgba(40, 77, 87, 0.15);
+    max-width: 420px;
+    width: 90%;
+    backdrop-filter: saturate(180%) blur(20px);
+    border: 1px solid #a5d8ff;
+    transition: box-shadow 0.3s ease;
+}
+
+.registration-panel:hover {
+    box-shadow: 0 20px 48px rgba(36, 93, 115, 0.25);
+}
+
+.registration-panel h1 {
+    margin-bottom: 28px;
+    font-weight: 700;
+    font-size: 28px;
+    text-align: center;
+    color: #1b3a4b;
+}
+
+.registration-panel label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #3a5a40;
+    font-size: 14px;
+}
+
+.registration-panel input {
+    width: 386px;
+    padding: 14px 16px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    border-radius: 12px;
+    border: 1.8px solid #a4d2ff;
+    background: #f6fbff;
+    transition: border-color 0.3s ease;
+    color: #264653;
+    outline-offset: 2px;
+}
+
+.registration-panel input::placeholder {
+    color: #7f8c8d;
+    font-style: italic;
+}
+
+.registration-panel input:focus {
+    border-color: #4caf50;
+    background: #e6f2e6;
+    outline: none;
+    box-shadow: 0 0 6px 2px #81c784aa;
+}
+
+.registration-panel button {
+    width: 100%;
+    background: linear-gradient(90deg, #4dabf5, #66bb6a, #ffa726);
+    padding: 14px;
+    font-weight: 700;
+    border: none;
+    border-radius: 14px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    transition: background-position 0.4s ease;
+    background-size: 200% 100%;
+    background-position: left;
+    box-shadow: 0 5px 10px rgba(102, 187, 106, 0.4);
+}
+
+.registration-panel button:hover {
+    background-position: right;
+    box-shadow: 0 6px 14px rgba(255, 167, 38, 0.7);
+}
+
+#registerMessage {
+    text-align: center;
+    color: #e74c3c;
+    font-size: 14px;
+    margin-top: 14px;
+}
+
+.switch-link {
+    margin-top: 24px;
+    font-size: 14px;
+    text-align: center;
+    color: #2f4f4f;
+}
+
+.switch-link a {
+    color: #4dabf5;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.switch-link a:hover {
+    color: #66bb6a;
+    text-decoration: underline;
+}
+
+
+/* login-panel.css (или в registration-panel.css) */
+
+.login-panel {
+    background: #ffffffcc;
+    padding: 42px 36px;
+    border-radius: 18px;
+    box-shadow: 0 14px 32px rgba(40, 40, 87, 0.15);
+    max-width: 420px;
+    width: 90%;
+    backdrop-filter: saturate(180%) blur(20px);
+    border: 1px solid #c2d1ff;
+    transition: box-shadow 0.3s ease;
+}
+
+.login-panel:hover {
+    box-shadow: 0 20px 48px rgba(36, 93, 115, 0.25);
+}
+
+.login-panel h1 {
+    margin-bottom: 28px;
+    font-weight: 700;
+    font-size: 28px;
+    text-align: center;
+    color: #1b3a4b;
+}
+
+.login-panel label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #3a5a40;
+    font-size: 14px;
+}
+
+.login-panel input {
+    width: 386px;
+    padding: 14px 16px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    border-radius: 12px;
+    border: 1.8px solid #a4d2ff;
+    background: #f6fbff;
+    transition: border-color 0.3s ease;
+    color: #264653;
+    outline-offset: 2px;
+}
+
+.login-panel input::placeholder {
+    color: #7f8c8d;
+    font-style: italic;
+}
+
+.login-panel input:focus {
+    border-color: #4dabf5;
+    background: #e6f2ff;
+    outline: none;
+    box-shadow: 0 0 6px 2px #81c784aa;
+}
+
+.login-panel button {
+    width: 100%;
+    background: linear-gradient(90deg, #4dabf5, #66bb6a, #ffa726);
+    padding: 14px;
+    font-weight: 700;
+    border: none;
+    border-radius: 14px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    transition: background-position 0.4s ease;
+    background-size: 200% 100%;
+    background-position: left;
+    box-shadow: 0 5px 10px rgba(102, 187, 106, 0.4);
+}
+
+.login-panel button:hover {
+    background-position: right;
+    box-shadow: 0 6px 14px rgba(255, 167, 38, 0.7);
+}
+
+.switch-link {
+    margin-top: 24px;
+    font-size: 14px;
+    text-align: center;
+    color: #2f4f4f;
+}
+
+.switch-link a {
+    color: #4dabf5;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.switch-link a:hover {
+    color: #66bb6a;
+    text-decoration: underline;
+}
+
+
+
+
+.auth-container {
+    position: relative;
+}
+
+.registration-panel, .login-panel {
+    opacity: 0;
+    transform: scale(1.5);
+    pointer-events: none;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.registration-panel.visible,
+.login-panel.visible {
+    opacity: 1;
+    transform: scale(1);
+    pointer-events: auto;
+    position: relative;
+}
+
+
+.error-message {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #f8d7da;
+    color: #842029;
+    padding: 12px 18px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    z-index: 1000; /* чтобы было поверх всего */
+    max-width: 300px;
+}
+
