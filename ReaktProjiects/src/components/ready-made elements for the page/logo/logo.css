@@ -1,0 +1,129 @@
+.Menu-and-search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background: rgba(255, 215, 0, 0.05);
+    border-bottom: 1px solid rgba(241, 196, 15, 0.3);
+    box-shadow: 0 0 12px rgba(255, 215, 0, 0.08);
+    backdrop-filter: blur(8px);
+}
+
+.logo {
+    height: 60px;
+    margin: 0;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #f1c40f33;
+    background-color: rgba(241, 196, 15, 0.1);
+    object-fit: cover;
+    display: block;
+}
+
+
+.user-info .user-name {
+    font-weight: bold;
+    color: #f1c40f;
+}
+
+.user-info .user-email {
+    font-size: 12px;
+    color: #ccc08f;
+}
+
+.account-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #1f1f1f;
+    border: 1px solid #f1c40f;
+    border-radius: 8px;
+    padding: 10px 0;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    z-index: 100;
+    min-width: 180px;
+    width: 200px;
+}
+
+.account-dropdown button,
+.language-selector{
+    display: block;
+    width: 100%;
+    background: none;
+    border: none;
+    color: #f1c40f;
+    padding: 10px 20px;
+    text-align: left;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background 0.3s;
+    user-select: none;
+
+
+}
+
+.dropdown-btn {
+    display: block;
+    width: 160px;
+    background: none;
+    border: none;
+    color: #f1c40f;
+    padding: 10px 20px;
+    text-align: left;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background 0.3s;
+    user-select: none;
+}
+
+.account-dropdown button:hover,
+.account-dropdown label.dropdown-btn:hover {
+    background: rgba(255, 215, 0, 0.1);
+}
+
+
+.account-dropdown input[type="file"] {
+    display: none;
+}
+
+
+.language-selector {
+    position: relative;
+    display: inline-block;
+}
+.language-dropdown {
+    display: none;
+    background: #222;
+    border-radius: 6px;
+    min-width: 120px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    border: 1px solid #e4cd97;
+    right: 244px;
+    top: 104px;
+    position: fixed;
+
+}
+
+.language-selector:hover .language-dropdown {
+    display: block;
+}
+.language-dropdown div {
+    color: #f1c40f;
+    padding: 10px;
+    cursor: pointer;
+}
+.language-dropdown div:hover {
+    background: #444;
+}

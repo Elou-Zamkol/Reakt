@@ -1,0 +1,16 @@
+.hotels-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 50px;
+    padding: 50px;
+
+}
+
+.conteyner{
+
+    top: 0;
+    display: inline-block;
+    width: 100%;
+    background: rgb(13, 13, 13, 0.4);
+
+}
