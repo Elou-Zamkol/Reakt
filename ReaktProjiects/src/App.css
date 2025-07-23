@@ -1,0 +1,26 @@
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: #f9e79f;
+
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 4000px;
+    min-width: 1100px;
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+
+
+}
+
+

@@ -1,0 +1,448 @@
+
+.account-conteyner {
+    min-height: 100vh;
+    background: rgba(30, 30, 30, 0.4);
+    padding: 20px; /* Меньше паддинг на мобилке */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #f1c40f;
+    max-width: 100%; /* Не даст выйти за экран */
+    overflow-x: hidden;
+}
+
+
+.genre-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 16px 0;
+    background: rgba(30, 30, 30, 0.4);
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(241, 196, 15, 0.34);
+    justify-content: center;
+}
+
+.genre-menu button {
+    padding: 10px 16px;
+    font-size: 14px;
+    background: rgba(16,16,16,0.3);
+    color: #f1c40f;
+    border: 1px solid rgba(241, 196, 15, 0.4);
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-weight: 600;
+    box-shadow: none;
+    backdrop-filter: blur(6px);
+}
+
+.genre-menu button.active,
+.genre-menu button:hover {
+    background: rgba(241, 196, 15, 0.8);
+    color: #121212;
+    box-shadow: 0 0 14px 4px rgba(241, 196, 15, 0.5);
+}
+
+
+
+.thanks-message {
+    background-color: rgba(31, 31, 31, 0.3);
+    padding: 36px 40px;
+    border-radius: 18px;
+    box-shadow: 0 0 16px rgba(241, 196, 15, 0.15);
+    margin-bottom: 200px;
+    margin-top: 100px;
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(241, 196, 15, 0.2);
+
+}
+
+.thanks-message h1 {
+    font-family: 'Georgia', serif;
+    font-weight: 700;
+
+    margin-bottom: 20px;
+    color: #f1c40f;
+    text-align: left;
+    font-size: 30px;
+}
+
+.thanks-message p {
+    font-size: 1.15rem;
+    line-height: 1.6;
+    color: #eee;
+    margin-bottom: 16px;
+    user-select: text;
+    text-align: left;
+}
+
+
+.service-blocks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6%;
+    margin-bottom: 200px;
+    justify-content: center;
+}
+
+.service-card {
+    background-color: rgba(34, 34, 34, 0.3);
+    border-left: 5px solid rgba(241, 196, 15, 0.6);
+    padding: 28px 32px;
+    border-radius: 20px;
+    width: 360px;
+    box-shadow: 0 0 16px rgba(255, 215, 0, 0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #eaeaea;
+    backdrop-filter: blur(6px);
+
+}
+
+.service-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 28px 6px rgba(255, 215, 0, 0.25);
+}
+
+.service-card h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #f1c40f;
+    font-weight: 700;
+    text-align: left;
+}
+
+.service-card p {
+    color: #ddd;
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: left;
+}
+
+
+.atelier-history {
+    background: rgba(255, 215, 0, 0.07);
+    padding: 42px 40px;
+    border-left: 5px solid rgba(241, 196, 15, 0.6);
+    border-radius: 18px;
+    font-family: 'Georgia', serif;
+    color: #ddd;
+    line-height: 1.7;
+    max-width: 4000px;
+    margin-bottom: 200px;
+    border-bottom: 1px solid rgba(241, 196, 15, 0.25);
+    box-shadow: 0 0 12px rgba(255, 215, 0, 0.06);
+    backdrop-filter: blur(6px);
+}
+
+.atelier-history h2 {
+    font-size: 2.2rem;
+    margin-bottom: 28px;
+    color: #f1c40f;
+    font-weight: 700;
+    text-align: left;
+}
+
+.atelier-history p {
+    margin-bottom: 18px;
+    font-size: 1.1rem;
+    text-align: left;
+}
+
+
+
+/* ============ БЛОК ОТЗЫВОВ КЛИЕНТОВ ============ */
+
+
+.client-reviews {
+    background: rgba(30, 30, 30, 0.85);
+    padding: 60px 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 24px rgba(241, 196, 15, 0.15);
+    margin-top: 200px;
+    color: #f1c40f;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.client-reviews h2 {
+    font-size: 2.4rem;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.review-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 32px;
+}
+
+.review {
+    background: rgba(18, 18, 18, 0.95);
+    padding: 24px;
+    border-radius: 16px;
+    box-shadow: 0 0 18px rgba(241, 196, 15, 0.1);
+    transition: transform 0.3s ease;
+    color: #fff7cc;
+}
+
+.review:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 22px rgba(241, 196, 15, 0.25);
+}
+
+.review p {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+.review span {
+    font-size: 0.95rem;
+    font-style: italic;
+    color: #f1c40f;
+}
+
+/* ============ БЛОК ЧТО ВЫ ХОТИТЕ УВИДЕТЬ ============ */
+
+.client-wishlist-modern {
+    background: rgba(255, 215, 0, 0.04);
+    padding: 60px 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(241, 196, 15, 0.12);
+    margin-top: 100px;
+    margin-bottom: 100px;
+    color: #f1c40f;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.client-wishlist-modern h2 {
+    text-align: center;
+    font-size: 2.4rem;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.wishlist-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 32px;
+}
+
+.wishlist-item {
+    background: rgba(30, 30, 30, 0.85);
+    padding: 24px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 0 16px rgba(241, 196, 15, 0.08);
+    transition: transform 0.3s ease;
+    color: #eee;
+}
+
+.wishlist-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 24px rgba(241, 196, 15, 0.25);
+}
+
+.wishlist-item span {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.wishlist-item p {
+    font-size: 1.1rem;
+    color: #ddd;
+}
+
+
+
+
+
+
+.why-choose-us {
+
+    padding: 60px 20px;
+    text-align: center;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 14px;
+    margin: 80px auto 120px;
+
+}
+
+.why-choose-us h2 {
+    font-size: 2.4rem;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 92px;
+}
+
+.feature {
+    background: #222;
+    border-radius: 12px;
+    padding: 24px 20px;
+    width: 200px;
+    box-shadow: 0 0 12px rgba(241, 196, 15, 0.2);
+    transition: transform 0.3s ease;
+
+
+}
+
+.feature:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 24px rgba(241, 196, 15, 0.5);
+}
+
+.icon {
+    font-size: 3rem;
+    display: block;
+    margin-bottom: 16px;
+}
+
+.feature h3 {
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+    font-weight: 600;
+    color: #f1c40f;
+}
+
+.feature p {
+    font-size: 1rem;
+    color: #ddd;
+    line-height: 1.4;
+}
+
+/* ================== АДАПТИВ ПОД МОБИЛКУ ================== */
+
+@media (max-width: 1024px) {
+    .account-conteyner {
+        padding: 20px;
+    }
+
+    .thanks-message,
+    .atelier-history,
+    .client-reviews,
+    .client-wishlist-modern,
+    .why-choose-us {
+        padding: 32px 24px;
+        margin-bottom: 100px;
+    }
+
+    .service-card {
+        width: 45%;
+        padding: 20px;
+    }
+
+    .features {
+        gap: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .genre-menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .service-blocks {
+        flex-direction: column;
+        gap: 24px;
+        margin-bottom: 100px;
+    }
+
+    .service-card {
+        width: 96%;
+        padding: 20px;
+    }
+
+    .thanks-message h1 {
+        font-size: 24px;
+    }
+
+    .thanks-message p {
+        font-size: 1rem;
+    }
+
+    .atelier-history h2 {
+        font-size: 1.8rem;
+    }
+
+    .atelier-history p {
+        font-size: 1rem;
+    }
+
+    .review-list {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .client-reviews h2,
+    .client-wishlist-modern h2,
+    .why-choose-us h2 {
+        font-size: 2rem;
+    }
+
+    .features {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+
+    .feature {
+        width: 100%;
+        max-width: 320px;
+    }
+}
+
+@media (max-width: 480px) {
+    .account-conteyner {
+        padding: 16px;
+    }
+
+    .genre-menu button {
+        width: 100%;
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    .thanks-message,
+    .atelier-history,
+    .client-reviews,
+    .client-wishlist-modern,
+    .why-choose-us {
+        padding: 20px 16px;
+    }
+
+    .thanks-message h1,
+    .client-reviews h2,
+    .client-wishlist-modern h2,
+    .why-choose-us h2 {
+        font-size: 1.6rem;
+    }
+
+    .wishlist-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .wishlist-item span {
+        font-size: 1.6rem;
+    }
+
+    .feature h3 {
+        font-size: 1.1rem;
+    }
+
+    .feature p {
+        font-size: 0.9rem;
+    }
+}
+
+
